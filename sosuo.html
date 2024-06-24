@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>搜索</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.box {
+				position: relative;      /* 相对定位 */				
+				height: 935px;
+				line-height: 50px;
+				background-image: url("img/屏幕截图 2024-06-20 223418.png");
+				background-size: cover;
+				background-position: center bottom; 
+				overflow: hidden;        /* 溢出内容隐藏 */		
+			}
+			.box ul {
+				position: absolute;      /* 绝对定位 */				
+				left: 0;
+				bottom: 0;
+				height: 50px;
+				text-align: center;
+				font-size: 30px;
+			}
+			.box ul li {
+				float: left;
+				margin-right: 20px;      /* 让每个条目右侧空15px */				
+				color: #fff;
+			}
+			form{
+				position: absolute;
+				bottom: 80px;
+				left: 450px;
+				margin: 0 auto;
+				
+			}
+			.ts{
+				float: left;
+				width: 900px;
+				height: 60px;
+				background: rgba(255, 255, 255, 0.7);
+				border-radius: 50px 0 0 50px;
+				border: 1px solid #eee;
+				font-size: 25px;
+			}
+			.ss{
+				float: right;
+				width: 100px;
+				height: 60px;
+				 background: #2196F3;;
+				border-radius: 0 50px 50px 0;
+				border: 1px solid #eee;
+				object-fit: contain;
+			}
+			header{
+				position: fixed;
+				 top: 0;
+				 width: 100%;
+				 z-index: 1;
+				 min-height: 120px;
+				 font-size: 16px;
+			}
+			.gd{
+				position: fixed;
+				bottom: 160px;
+				right: 50px;
+			}
+			#clock{
+				position: fixed;
+				right: 0px;
+				bottom: 20px;
+				width:200px;
+				height:50px;
+				font-size:16px;
+				font-weight:bold;
+				line-height:50px;
+				color: #7e808a;				
+			}
+			header .logo_left{
+				margin-top: 12px;
+				margin-left: 55px;	
+			}
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+		</style>
+
+	</head>
+	<body>
+		<header>
+			<div class="gd">
+				<a href=""><img src="img/floatbtn1.png" alt="" /></a><!-- 固定定位 -->
+			</div>
+			<div id="clock"></div>
+			<div class="logo_left fl">
+					<a href=""><img src="img/微信图片_20240622173305.png" alt="" style="width: 400px ; height: 150px;" /></a>
+			</div>
+			
+		</header>
+		<div class="box">
+			
+			<ul>
+				<li>注意事项</li>
+				<li>水产品市场</li>
+				<li>岛上吃喝</li>
+				<li>岛上交通</li>
+				<li>地理环境</li>
+				<li>枸杞岛住宿</li>
+				<li>枸杞岛两天一晚</li>
+				<li>枸杞岛三天两晚</li>
+				<li>枸杞岛地图</li>
+				<li>枸杞岛路线安排</li>
+			</ul>
+			<form action="">
+				<input type="text" class="ts" />
+				<input type="image" value="" class="ss" src="img/search-icon.png"/>
+			</form>
+		</div>
+		<script>
+			//实现滚动文字效果
+			var speed = -1;
+			var list = document.getElementsByTagName('ul')[0]; //获取ul元素
+			var item = document.getElementsByTagName('li');    //获取li元素集合
+			list.innerHTML = list.innerHTML + list.innerHTML;
+			list.style.width = item[0].offsetWidth * item.length + 'px'; //offsetWidth返回元素的宽度（包括元素宽度、内边距和边框，不包括外边距）
+			function move() {
+				if (list.offsetLeft < -list.offsetWidth / 2) {   //offsetLeft元素离父元素左边的距离
+					list.style.left = 0 + "px";
+				}
+				list.style.left = list.offsetLeft + speed + 'px';
+			}
+			setInterval(move, 30);     //每隔30ms移动一次
+		</script>
+		<script>
+			function getTime(){     //定义函数
+			 var now=new Date();    //创建日期对象
+			 document.getElementById('clock').innerHTML=now.toLocaleString(); //将日期和时间显示到盒子中
+			}
+			window.onload=setInterval(getTime,1000); //每隔1s执行一次getTime()函数
+		</script>
+	</body>
+</html>

@@ -1,0 +1,313 @@
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+ }
+
+
+a:hover{
+	color: #db1900;
+}
+*{
+    margin: 0;
+    padding: 0;
+	list-style: none;
+	text-decoration: none;
+ }
+a{
+	color: #212121;
+	text-decoration: none;
+}
+img{
+	border: 0;
+	vertical-align: top;
+}
+.fl{
+	float: left;
+}
+.fr{
+    float: right;
+}
+.w{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+header{
+	position: relative;
+	position: fixed;
+	 top: 0;
+	 width: 100%;
+	 z-index: 1;
+	 min-height: 120px;
+	 font-size: 16px;
+	 background-color: rgba(0, 0, 0, 0.6);
+}
+.gd{
+	position: fixed;
+	bottom: 160px;
+	right: 50px;
+}
+#clock{
+	position: fixed;
+	right: 0px;
+	bottom: 15px;
+	width:200px;
+	height:50px;
+	font-size:16px;
+	font-weight:bold;
+	line-height:50px;
+	color: #7e808a;				
+}
+header .logo_left{
+	margin-top: 12px;
+	margin-left: 55px;	
+}
+header .header_top{
+	margin-top: 15px;
+	margin-right: 60px;
+}
+header .header_top ul li{
+	float: left;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+}
+header .header_top ul li a{
+	color: #fff;
+	padding: 0 15px;
+}
+header .header_top ul li.zhusu{
+	background: #db1900;
+	padding: 0 12px;
+}
+header nav{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 57px;
+}
+header nav ul li{
+	float: left;
+	
+}
+header nav ul li a{
+	padding: 20px 0;
+	color: #fff;
+	font-size: 25px;
+	margin-right: 60px;
+	width: 100px;
+	
+	
+	
+}
+header nav ul{
+	position: relative;
+}
+.sy{
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	top: 57px;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 3px solid #db1900;
+	display: none;
+}
+.nav_b li:hover>.sy{
+	display: block;
+}
+.ct{
+	position: absolute;
+	width: 160px;
+	height: 75px;
+	top: 57px;
+	left: 160px;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 3px solid #db1900;
+	display: none;
+}
+.nav_b li:hover>.ct{
+	display: block;
+}
+.wh{
+	position: absolute;
+	width: 200px;
+	height:100px;
+	top: 57px;
+	left: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 3px solid #db1900;
+	display: none;
+}
+.nav_b li:hover>.wh{
+	display: block;
+}
+.hd{
+	position: absolute;
+	width: 160px;
+	height:100px;
+	top: 57px;
+	left: 480px;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 3px solid #db1900;
+	display: none;
+}
+.nav_b li:hover>.hd{
+	display: block;
+}
+.hdg{
+	position: absolute;
+	width: 160px;
+	height:100px;
+	top: 57px;
+	left: 640px;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 3px solid #db1900;
+	display: none;
+}
+.nav_b li:hover>.hdg{
+	display: block;
+}
+.cx{
+	position: absolute;
+	width: 160px;
+	height:100px;
+	top: 57px;
+	left:800px;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 3px solid #db1900;
+	display: none;
+}
+/* 鼠标点击时显示 */
+.nav_b li:hover>.cx{
+	display: block;
+}
+/* 详情页---住宿 */
+.zhusuimg  a img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: center bottom; 
+}
+.zhusuz{
+	position: absolute;
+	top: 320px;
+	left: 320px;
+	width: 300px;
+	height: 100px;
+	background: rgba(0, 0, 0, 0.6);
+	border: 2px solid #fff;
+}
+.zhusuz a{
+	font-size: 40px;
+	color: #fff;
+	line-height: 100px;
+	margin-left: 30px;
+}
+.zhusuz_b{
+	padding: 20px 0;
+	margin:20px 0;
+}
+.zhusuz_b li{
+	float: left;
+	font-size: 20px;
+	line-height: 20px;
+	margin-right: 5px;
+}
+.zs_bx{
+	border-bottom: 1px solid #7e808a;
+}
+.dszhusu{
+	    font-family: 'SourceHanS-S_Be206bf1321a330';
+	    font-size: 50px;
+	    color: #272831;
+	    line-height: 130px;
+}
+.zhusuhj img{
+	margin-bottom: 20px;
+	display: block;
+}
+.zhusuhj img:hover{
+	transform: scale(1.2);
+	transition: 1s ; 
+}
+.zhusuhj p{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+footer{
+	width: 100px;
+	height: 500px;
+	background: #272831;
+	width: 100%;
+}
+.footer_t{
+	width: 100%;
+	height: 110px;
+	border-bottom: solid 2px #3d3d47;
+}
+footer .w .ft_left{
+	float: left;
+	height: 110px;
+	line-height: 110px;
+}
+footer .w .ft_left ul li{
+	float: left;
+}
+footer .w .ft_left ul li a{
+	display: inline-block;
+	width: 200px;
+	font-family: Arial, '微软雅黑', 'Microsoft YaHei', PingFangSC-Regular;
+	font-size: 24px;
+	padding-right: 30px;
+	color: #fff;
+	
+}
+.ft_right{
+	float: right;
+	line-height: 110px;
+}
+footer .w .ft_right a{
+	float: right;
+	
+	padding-left: 50px;
+}
+.ft_right a img{
+	background: #fff;
+}
+.fn_t{
+	float: left;
+}
+.footer_nav{
+	padding-bottom: 30px;
+	border-bottom: 2px solid #3d3d47;
+}
+.footer_nav>ul{
+	margin-top: 35px;
+	height: 250px;
+}
+.footer_nav > ul >li{
+	margin-right: 22px;
+	width: 160px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.fn_t ul {
+	padding-top: 30px;
+}
+.fn_t ul li a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 15px;
+	line-height: 25px;
+	color: #7e808a;
+}
+.fname{
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+}

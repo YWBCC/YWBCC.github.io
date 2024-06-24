@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?4opn0b');
+    src: url('../fonts/icomoon.eot?4opn0b#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?4opn0b') format('truetype'),
+        url('../fonts/icomoon.woff?4opn0b') format('woff'),
+        url('../fonts/icomoon.svg?4opn0b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.w {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F9F8F5;
+}
+
+/* head区域 */
+.head {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0);
+    height: 90px;
+    border-bottom: 1px solid #333030;
+}
+
+.head .logo {
+    float: left;
+    width: 59px;
+    height: 71px;
+    margin-left: 45px;
+    position: relative;
+    top: 8px;
+}
+
+.head .logo img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.head .fl {
+    float: left;
+
+    width: 735px;
+    margin-left: 100px;
+
+
+}
+
+.fl ul li {
+
+    float: left;
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+
+}
+
+.fl ul li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.fl ul li a {
+    color: #fff;
+}
+
+.fl ul li:nth-child(even) {
+    width: 1px;
+    height: 18px;
+    line-height: 90px;
+    background-color: #fff;
+    margin: 38px 15px 0;
+
+}
+
+
+.login {
+    float: right;
+
+    width: 300px;
+    height: 90px;
+    line-height: 90px;
+}
+
+
+.login ul li {
+    float: left;
+
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
+.s_red {
+    color: rgb(194, 46, 46);
+}
+
+.phone {
+    float: right;
+    margin-right: 60px;
+    line-height: 90px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* 轮播图开始 */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 950px;
+    /* 可以根据需要调整 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel a {
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    font-family: "宋体";
+    width: 600px;
+    height: 60px;
+    font-size: 42px;
+    color: #fff;
+
+}
+
+.carousel .slides {
+
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.carousel .slides .slide {
+    width: 100%;
+    flex-shrink: 0;
+    display: none;
+    /* 默认不显示 */
+}
+
+.carousel .slides img {
+    display: block;
+    width: 100%;
+    height: 950px;
+    overflow: hidden;
+
+}
+
+.carousel .controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel .controls button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+
+
+/* 旅行栏开始 */
+.travel {
+    position: absolute;
+    left: 50%;
+    margin-left: -720px;
+    height: 70px;
+    bottom: 0;
+    line-height: 70px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+}
+
+.start {
+    float: left;
+
+}
+
+.start h2 {
+    margin-left: 55px;
+    float: left;
+    font: 30px;
+    color: #333030;
+}
+
+.start input {
+    margin-left: 550px;
+    width: 300px;
+    height: 35px;
+    border-radius: 50px;
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #333030;
+
+}
+
+
+
+.start .search_icon {
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    content: 'f002';
+    color: #514d4d;
+    font-family: 'icomoon';
+    margin-left: 5px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+.start button {
+    position: absolute;
+    right: 0;
+    background-color: #B24840;
+    width: 220px;
+    border-radius: 0 20px 20px 0;
+
+    color: #fff;
+    font-size: 16px;
+    line-height: 70px;
+
+}
+
+.s_date {
+    position: absolute;
+    right: 0;
+    top: -60px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.relation {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    width: 50px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 35px;
+
+}
+
+.relation ul li {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+
+}
+
+.relation img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* content开始 */
+
+.content {
+    position: relative;
+    top: -130px;
+    height: 200px;
+
+    border-radius: 30px;
+}
+
+.content ul li {
+    float: left;
+    width: 450px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 30px;
+
+}
+
+.content ul li img {
+    border-radius: 30px;
+
+    width: 100%;
+}
+
+#c1 {
+    margin: 0 40px;
+}
+
+#c2 {
+    float: right;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.box3 {
+    height: 620px;
+
+
+}
+
+.box3_h {
+    height: 100px;
+
+    text-align: center;
+    font-size: 40px;
+    color: #1B4549;
+}
+
+.box3_img {
+    height: 480px;
+}
+
+.rimg {
+    float: left;
+    width: 500px;
+    height: 514px;
+
+}
+
+.rimg h4 {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #fff;
+    background-color: #1B4549;
+}
+
+.rimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.limg {
+    float: right;
+    height: 520px;
+    width: 940px;
+}
+
+.limg ul li {
+    float: left;
+    height: 250px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+.box4 {
+    height: 500px;
+
+}
+
+.box4_img {
+    float: left;
+    height: 300px;
+
+}
+
+.box4_img ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.box4_img ul span {
+    display: block;
+    width: 450px;
+    height: 40px;
+    background-color: #1B4549;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+/* footer开始了 */
+.fdiv {
+
+    height: 100px;
+    background-color: #1B4549;
+}
+
+.fdiv ul li {
+    display: block;
+    float: left;
+    width: 33.3%;
+}
+
+.fdiv ul li a {
+    margin-left: 250px;
+    line-height: 100px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.fdiv ul li i {
+    padding-left: 10px;
+}
+
+.map {
+    height: 550px;
+
+}
+
+.map img {
+    height: 100%;
+}
+
+.foot {
+
+    height: 250px;
+    background-color: #1B4549;
+}
+
+.flogo {
+    float: left;
+    width: 200px;
+    height: 120px;
+    margin: 20px 50px 0 50px;
+
+
+}
+
+.footer .links {
+    float: right;
+}
+
+.footer .links dl {
+    float: left;
+    margin-left: 100px;
+}
+
+.footer .links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
